@@ -1,0 +1,10 @@
+@model IEnumerable<FluentSpotifyApi.Model.FullTrack>
+
+<ul>
+    @foreach(var item in Model){
+        <li>
+            @item.Artists.FirstOrDefault().Name - @item.Name
+        </li>
+    }
+    
+</ul>
